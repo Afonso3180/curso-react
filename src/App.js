@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
+import List from './components/List';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const nome = "Neto"
+
+    return (
+        <div className="App">
+            <h1>Testando CSS</h1>
+            <Frase />
+            <Frase />
+            <SayMyName nome='Afonso' />
+            <SayMyName nome='Ariella' />
+            <SayMyName nome={nome} />
+            <Pessoa 
+                nome="Isabela" 
+                idade = "26" 
+                profissao = "advogada" 
+                foto="https://www.github.com/joana.png"/>
+            <List />
+        </div>
+    );
 }
 
 export default App;
