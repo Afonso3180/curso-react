@@ -1,9 +1,6 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
 
@@ -11,18 +8,9 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Testando CSS</h1>
-            <Frase />
-            <Frase />
-            <SayMyName nome='Afonso' />
-            <SayMyName nome='Ariella' />
-            <SayMyName nome={nome} />
-            <Pessoa 
-                nome="Isabela" 
-                idade = "26" 
-                profissao = "advogada" 
-                foto="https://www.github.com/joana.png"/>
-            <List />
+            <h1>Testando Eventos</h1>
+            <Evento />
+            <Form />
         </div>
     );
 }
